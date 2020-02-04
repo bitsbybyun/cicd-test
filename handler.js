@@ -3,6 +3,8 @@ const moment = require('moment-timezone');
 module.exports.gimmetime = async (event) => {
   let tz = 'Europe/Rome';
 
+  console.log('api called...');
+
   if (event.queryStringParameters && event.queryStringParameters.tz) {
     tz = event.queryStringParameters.tz;
 
